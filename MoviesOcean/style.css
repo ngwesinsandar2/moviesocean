@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.oceanbg {
+  width: 100%;
+  height: 4473px;
+}
+
+.oceanbgImg {
+  width: 100%;
+  height: 100%;
+}
+
+.menuBar,
+.logoAndTitle,
+.navBar ul,
+.slider,
+.wNImdbAR,
+.preAndNext,
+.circles,
+.header,
+.lineAndTitle,
+.newWatchings,
+.numbers,
+.genreLinks,
+.genre,
+.years,
+.socialCon,
+.logoAndLetter,
+.plot .ageRatingAndRatingCon {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuBar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #a2a2a283;
+  backdrop-filter: blur(15px) contrast(130%);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logoAndTitle {
+  align-items: center;
+}
+
+.oceanLogoCon {
+  width: 12%;
+}
+
+.logoAndTitle h5 {
+  margin: 0;
+}
+
+.navBar {
+  font-weight: bold;
+}
+
+.navBar .nav-link {
+  box-shadow: inset 0 0 0 0 #13c6ff;
+  transition: ease 0.3s;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.navBar .nav-link:hover {
+  box-shadow: inset 100px 0 0 0 #13c6ff;
+}
+
+.menuBarIcon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.navBarPh {
+  width: 100%;
+  height: 200px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #a2a2a283;
+  backdrop-filter: blur(15px) contrast(130%);
+  position: fixed;
+  top: 70px;
+  z-index: 3;
+}
+
+.navBarPh ul {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBarPh ul li {
+  list-style: none;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.navBarPh ul li:hover {
+  background-color: #13c6ff;
+  transition: 0.3s ease;
+}
+
+/* .searchBar input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.searchBar input::placeholder {
+  color: #fff;
+}
+
+.searchLogo {
+  width: 40px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 14px;
+  margin-left: -6px;
+} */
+
+.user {
+  width: 38px;
+}
+
+.sliderCon {
+  position: absolute;
+  top: 70px;
+  width: 100vw;
+}
+
+.slide {
+  animation: ani 3.5s linear;
+}
+
+@keyframes ani {
+  0% {
+    transform: scale(1.1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slideImg,
+.box {
+  width: 100%;
+  height: 93vh;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutMovie {
+  width: 1899px;
+  color: #fff;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.genresSlide span,
+.year {
+  border: 2px solid #fff;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+.wNImdbAR {
+  align-items: center;
+}
+
+.watchNow {
+  width: 200px;
+  color: #fff;
+  background: none;
+  padding: 5px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  transition: ease-out 0.1s;
+}
+
+.watchNow:hover {
+  background-color: #13c6ff;
+}
+
+.Imdb {
+  background-color: #fff;
+  color: #13c6ff;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.aR {
+  background-color: #fff;
+  color: #13c6ff;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 8px 0 8px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+}
+
+.preAndNext {
+  justify-content: space-between;
+}
+
+.preAndNext button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  font-size: 40px;
+}
+
+.preAndNext button:hover {
+  color: #13c6ff;
+}
+
+.circles {
+  justify-content: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border-color: #13c6ff;
+}
+
+.moviesAndSeriesAndGenres {
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.newRelease {
+  margin-top: 100px;
+}
+
+#allMovies,
+#allSeries,
+.genresCon {
+  margin-top: 200px;
+}
+
+.line {
+  width: 5px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.lineAndTitle {
+  color: #fff;
+  align-items: center;
+}
+
+.newWatchings {
+  overflow-x: scroll;
+}
+
+.newWatchings::-webkit-scrollbar {
+  width: 0;
+}
+
+.newWatching {
+  margin-top: 20px;
+}
+
+.watchingImg {
+  border-radius: 8px;
+}
+
+.plot {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ababab47;
+  backdrop-filter: blur(15px) contrast(130%);
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.2s linear;
+  text-align: center;
+  overflow: auto;
+}
+
+.plot::-webkit-scrollbar {
+  width: 0;
+}
+
+.plot h6 {
+  width: 160px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.plot .ageRatingAndRatingCon {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.plot .rTAR {
+  height: 100%;
+  background-color: #13c6ff;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.plot .ageRatingAndRatingCon h5 {
+  margin: 0;
+}
+
+.seeAll {
+  width: 100px;
+  height: 40px;
+  color: #13c6ff;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 0 #13c6ff;
+  transition: ease 0.3s;
+}
+
+.seeAll:hover {
+  color: #fff;
+  box-shadow: inset 100px 0 0 0 #13c6ff;
+}
+
+.numbers {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.noCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f4f4f483;
+  backdrop-filter: blur(15px) contrast(130%);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+.noCircle:hover {
+  background-color: #13c6ff;
+}
+
+.genreLinks,
+.years {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.genreLink {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff6b;
+  backdrop-filter: blur(20px) contrast(130%);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 25px;
+  transition: 0.3s ease;
+}
+
+.genreLink:hover {
+  color: #fff;
+  background: #dfdfdf81;
+  box-shadow: 0 0 5px #dfdfdf81, 0 0 20px #dfdfdf81, 0 0 60px #dfdfdf81,
+    0 0 10px #dfdfdf81;
+}
+
+.genre {
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.year {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+  margin: 8px;
+}
+
+.year:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff6b;
+  backdrop-filter: blur(20px) contrast(130%);
+  color: #fff;
+}
+
+.line-break-con {
+  display: flex;
+  justify-content: center;
+}
+
+.line-break {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.521);
+  height: 2px;
+  text-align: center;
+}
+
+.socialCon {
+  justify-content: center;
+}
+
+.socialImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.logoAndLetter {
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.developerName {
+  color: rgba(255, 255, 255, 0.652);
+  text-align: right;
+  margin: 0;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .oceanbg {
+    height: 4910px;
+  }
+
+  .sliderCon {
+    width: 100vw;
+  }
+
+  .slideImg,
+  .box {
+    width: 100%;
+    height: 500px;
+  }
+
+  .aboutMovie {
+    height: 80%;
+  }
+
+  .aboutMovie h1 {
+    font-size: 25px;
+    width: 300px;
+  }
+
+  .aboutMovie p {
+    font-size: 15px;
+  }
+
+  .watchNow {
+    width: 130px;
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  .Imdb,
+  .aR {
+    font-size: 15px;
+  }
+
+  .preAndNext button {
+    font-size: 20px;
+  }
+
+  .moviesAndSeriesAndGenres {
+    height: 0px;
+    position: absolute;
+    top: 550px;
+  }
+
+  .lineAndTitle h3 {
+    font-size: 20px;
+  }
+
+  #allMovies,
+  #allSeries,
+  .genresCon {
+    margin-top: 100px;
+  }
+
+  .plot .movieTitle {
+    font-size: 20px;
+  }
+
+  .plot p {
+    font-size: 13px;
+  }
+
+  .plot h6 {
+    width: 100%;
+  }
+
+  .plot .rTAR {
+    font-size: 15px;
+  }
+
+  .plot .ageRatingAndRatingCon h5 {
+    font-size: 16px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .oceanbg {
+    height: 4600px;
+  }
+
+  #allMovies,
+  #allSeries,
+  .genresCon {
+    margin-top: 100px;
+  }
+
+  .plot .movieTitle {
+    font-size: 20px;
+  }
+
+  .plot p {
+    font-size: 13px;
+  }
+
+  .plot h6 {
+    width: 100%;
+  }
+
+  .plot .rTAR {
+    font-size: 15px;
+  }
+
+  .plot .ageRatingAndRatingCon h5 {
+    font-size: 16px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .oceanbg {
+    height: 3780px;
+  }
+
+  #allMovies,
+  #allSeries,
+  .genresCon {
+    margin-top: 100px;
+  }
+
+  .plot .movieTitle {
+    font-size: 20px;
+  }
+
+  .plot p {
+    font-size: 13px;
+  }
+
+  .plot h6 {
+    width: 100%;
+  }
+
+  .plot .rTAR {
+    font-size: 15px;
+  }
+
+  .plot .ageRatingAndRatingCon h5 {
+    font-size: 16px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .oceanbg {
+    height: 3690px;
+  }
+
+  #allMovies,
+  #allSeries,
+  .genresCon {
+    margin-top: 100px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
