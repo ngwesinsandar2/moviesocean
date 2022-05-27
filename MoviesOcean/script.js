@@ -116,7 +116,7 @@ const uploadUI = (allSliders) => {
         <div class="aboutMovie col-12 ms-1 ms-md-4 ms-lg-4">
             <h1>${allSliders.movieTitle}</h1>
     
-            <p class="col-2 col-md-12 col-lg-12">
+            <p class="col-11 col-md-12 col-lg-12">
                 ${allSliders.info}
             </p>
     
@@ -307,22 +307,22 @@ let upload2 = (moviesAndSeriesConArrayTitle) => {
           <h3>${e.title}</h3>
         </div>
 
-        <button class="seeAll me-4">See All</button>
+        <a href=""><button class="seeAll me-4">See All</button></a>
       </div>
 
       <div class="newWatchings ${e.watchingsCon} ms-lg-2"></div>
 
       <div class="numbers d-none d-sm-flex d-md-flex d-lg-flex">
-        <div class="noCircle ${e.lineClass} noCircle1">1</div>
-        <div class="noCircle ${e.lineClass} noCircle2">2</div>
-        <div class="noCircle ${e.lineClass} noCircle3">3</div>
-        <div class="noCircle ${e.lineClass} noCircle4">4</div>
-        <div class="noCircle ${e.lineClass} noCircle5">5</div>
-        <div class="noCircle ${e.lineClass} noCircle6">6</div>
-        <div class="noCircle ${e.lineClass} noCircle7">7</div>
-        <div class="noCircle ${e.lineClass} noCircle8">8</div>
-        <div class="noCircle ${e.lineClass} noCircle9">9</div>
-        <div class="noCircle ${e.lineClass} noCircle10">10</div>
+        <div class="noCircle ${e.lineClass}">1</div>
+        <div class="noCircle ${e.lineClass}">2</div>
+        <div class="noCircle ${e.lineClass}">3</div>
+        <div class="noCircle ${e.lineClass}">4</div>
+        <div class="noCircle ${e.lineClass}">5</div>
+        <div class="noCircle ${e.lineClass}">6</div>
+        <div class="noCircle ${e.lineClass}">7</div>
+        <div class="noCircle ${e.lineClass}">8</div>
+        <div class="noCircle ${e.lineClass}">9</div>
+        <div class="noCircle ${e.lineClass}">10</div>
       </div>
     </div>
     `;
@@ -335,6 +335,8 @@ let newWatchingsCon = document.querySelector(".newWatchings");
 let newWatchings = [
   {
     id: "newOne",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/eeato.jpg",
     alt: "Everything Everywhere All at Once(2022)",
     smallAbout:
@@ -346,39 +348,47 @@ let newWatchings = [
 
   {
     id: "newTwo",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/soon-to-reach-the-sea.png",
     alt: "One Day, You Will Reach The Sea",
     smallAbout:
-      "Like the title, the movie is separated into three parts: Everyting, Everywhere and All at Once. Evelyn Wang is a Chinese-American woman who runs a struggling laundromat with her husband, Waymond. Tensions are high due to the laundromat being audited by the IRS.",
-    genre: "Sci-fi, Adventure",
-    ageRating: "R-17+",
-    rating: "8.7",
+      "Mana Kotani was friends with Sumire Utsuki for years. She admired Sumire's freewheeling ways and mysterious charm, but Sumire broke off connections with her. Later, Mana hears of Sumire's death, which she cannot get over.",
+    genre: "Life, Drama",
+    ageRating: "not rated",
+    rating: "6.1",
   },
 
   {
     id: "newThree",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/morbius.jpg",
     alt: "Morbius(2022)",
     smallAbout:
-      "Like the title, the movie is separated into three parts: Everyting, Everywhere and All at Once. Evelyn Wang is a Chinese-American woman who runs a struggling laundromat with her husband, Waymond. Tensions are high due to the laundromat being audited by the IRS.",
-    genre: "Sci-fi, Adventure",
-    ageRating: "R-17+",
-    rating: "8.7",
+      "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+    genre: "Action, Fantasy",
+    ageRating: "PG-13",
+    rating: "5.2",
   },
 
   {
     id: "newFour",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/fbtsod2.jpg",
-    alt: "Fantastic Beasts:The Secrets of Dumbledore",
+    alt: "Fantastic Beasts:The Secrets of Dumbledore(2022)",
     smallAbout:
-      "Like the title, the movie is separated into three parts: Everyting, Everywhere and All at Once. Evelyn Wang is a Chinese-American woman who runs a struggling laundromat with her husband, Waymond. Tensions are high due to the laundromat being audited by the IRS.",
-    genre: "Sci-fi, Adventure",
-    ageRating: "R-17+",
-    rating: "8.7",
+      "Professor Albus Dumbledore knows the powerful Dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts Magizoologist Newt Scamander to lead an intrepid team of wizards.",
+    genre: "Fantasy, Adventure",
+    ageRating: "PG-13",
+    rating: "6.4",
   },
 
   {
     id: "newFive",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/onefortheroad2.jpg",
     alt: "One For The Road",
     smallAbout:
@@ -390,6 +400,8 @@ let newWatchings = [
 
   {
     id: "newSix",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/Woori_The_Virgin-p2.jpg",
     alt: "Woori: The Virgin",
     smallAbout:
@@ -401,6 +413,8 @@ let newWatchings = [
 
   {
     id: "newSeven",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/Spy-x-Family.webp",
     alt: "Spy x Family",
     smallAbout:
@@ -412,6 +426,8 @@ let newWatchings = [
 
   {
     id: "newEight",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/momadness.jpg",
     alt: "Multiverse of Madness",
     smallAbout:
@@ -423,6 +439,8 @@ let newWatchings = [
 
   {
     id: "newNine",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/againmylife.jpg",
     alt: "Again My Life",
     smallAbout:
@@ -434,6 +452,8 @@ let newWatchings = [
 
   {
     id: "newTen",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/shootingstar2.webp",
     alt: "Sh**ting Star",
     smallAbout:
@@ -448,6 +468,8 @@ let allMoviesCon = document.querySelector(".moviesArray");
 let allMovies = [
   {
     id: "movieOne",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/eeato.jpg",
     alt: "Everything Everywhere All at Once",
     smallAbout:
@@ -459,6 +481,8 @@ let allMovies = [
 
   {
     id: "movieTwo",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/soon-to-reach-the-sea.png",
     alt: "One Day, You Will Reach The Sea",
     smallAbout:
@@ -470,6 +494,8 @@ let allMovies = [
 
   {
     id: "movieThree",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/morbius.jpg",
     alt: "Morbius",
     smallAbout:
@@ -481,6 +507,8 @@ let allMovies = [
 
   {
     id: "movieFour",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/fbtsod2.jpg",
     alt: "Fantastic Beasts:The Secrets of Dumbledore",
     smallAbout:
@@ -492,6 +520,8 @@ let allMovies = [
 
   {
     id: "movieFive",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/onefortheroad2.jpg",
     alt: "One For The Road",
     smallAbout:
@@ -503,6 +533,8 @@ let allMovies = [
 
   {
     id: "movieSix",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/momadness.jpg",
     alt: "Multiverse of Madness(2022)",
     smallAbout:
@@ -514,6 +546,8 @@ let allMovies = [
 
   {
     id: "movieSeven",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/alongfortheroad.jpg",
     alt: "Along For The Road",
     smallAbout:
@@ -525,6 +559,8 @@ let allMovies = [
 
   {
     id: "movieEight",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/sforbeginners.jpg",
     alt: "Suicide For Beginners",
     smallAbout:
@@ -536,6 +572,8 @@ let allMovies = [
 
   {
     id: "movieNine",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/crush.jpg",
     alt: "Crush",
     smallAbout:
@@ -547,6 +585,8 @@ let allMovies = [
 
   {
     id: "movieTen",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/sonicthe2.jpg",
     alt: "Sonic the Hedgehog 2",
     smallAbout:
@@ -561,6 +601,8 @@ let allSeriesCon = document.querySelector(".seriesArray");
 let allSeries = [
   {
     id: "serieOne",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/thebaby.jpg",
     alt: "The Baby",
     smallAbout:
@@ -572,6 +614,8 @@ let allSeries = [
 
   {
     id: "serieTwo",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/Woori_The_Virgin-p2.jpg",
     alt: "Woori: The Virgin",
     smallAbout:
@@ -583,6 +627,8 @@ let allSeries = [
 
   {
     id: "serieThree",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/Spy-x-Family.webp",
     alt: "Spy x Family",
     smallAbout:
@@ -594,6 +640,8 @@ let allSeries = [
 
   {
     id: "serieFour",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/againmylife.jpg",
     alt: "Again My Life",
     smallAbout:
@@ -605,6 +653,8 @@ let allSeries = [
 
   {
     id: "serieFive",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/shootingstar2.webp",
     alt: "Sh**ting Star",
     smallAbout:
@@ -616,6 +666,8 @@ let allSeries = [
 
   {
     id: "serieSix",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/moonknight.jpeg",
     alt: "Moon Knight",
     smallAbout:
@@ -627,6 +679,8 @@ let allSeries = [
 
   {
     id: "serieSeven",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/heartstopper.jpg",
     alt: "Heart Stopper",
     smallAbout:
@@ -638,6 +692,8 @@ let allSeries = [
 
   {
     id: "serieEight",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/loveallplay.jpg",
     alt: "Love All Play",
     smallAbout:
@@ -649,6 +705,8 @@ let allSeries = [
 
   {
     id: "serieNine",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/devilsis.jpg",
     alt: "My Devil Sister",
     smallAbout:
@@ -660,6 +718,8 @@ let allSeries = [
 
   {
     id: "serieTen",
+    watchLink:
+      "https://628f49a96269d0455867910d--everything-everywhere-all-at-once.netlify.app/",
     img: "./moviesoceanphotos/sb.webp",
     alt: "Savage Beauty",
     smallAbout:
@@ -673,7 +733,7 @@ let allSeries = [
 let upload3 = (moviesAndSeriesArray, con) => {
   moviesAndSeriesArray.forEach((e) => {
     watching = `
-      <a href="" id="${e.id}" class="newWatching position-relative mb-2 col-6 col-sm-4 col-md-2 col-lg-2">
+      <a href="${e.watchLink}" id="${e.id}" class="newWatching position-relative mb-2 col-6 col-sm-4 col-md-2 col-lg-2">
         <img
           src="${e.img}"
           class="img-fluid h-100 col-11 watchingImg"
@@ -715,24 +775,152 @@ for (let i = 0; i < aLinkMovieAndSerie.length; i++) {
 }
 
 let noCircleNew = document.querySelectorAll(".noCircleNew");
+let noCircleMovie = document.querySelectorAll(".noCircleMovie");
+let noCircleSerie = document.querySelectorAll(".noCircleSerie");
 
-for (let i = 0; i < noCircleNew.length; i++) {
-  console.log(noCircleNew[i]);
-  noCircleNew[i].addEventListener("click", () => {
-    console.log(noCircleNew[i]);
-    noCircleNew[i].style.backgroundColor = "#f4f4f483";
-    noCircleNew[i].style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
-    noCircleNew[i].style.backdropFilter = "blur(15px) contrast(130%)";
-  });
-}
+const noCircleFun = (noCircleNodeList) => {
+  noCircleNodeList[0].addEventListener("click", () => {
+    noCircleNodeList[0].style.background = "#13c6ff";
 
-for (let i = 0; i < noCircleNew.length; i++) {
-  console.log(noCircleNew[i]);
-  noCircleNew[i].addEventListener("click", () => {
-    console.log(noCircleNew[i]);
-    noCircleNew[i].style.background = "#13c6ff";
+    for (let i = 1; i < noCircleNodeList.length; i++) {
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+
+    document.querySelector("#newOne");
   });
-}
+
+  noCircleNodeList[1].addEventListener("click", () => {
+    noCircleNodeList[1].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 1) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[2].addEventListener("click", () => {
+    noCircleNodeList[2].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 2) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[3].addEventListener("click", () => {
+    noCircleNodeList[3].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 3) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[4].addEventListener("click", () => {
+    noCircleNodeList[4].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 4) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[5].addEventListener("click", () => {
+    noCircleNodeList[5].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNew.length; i++) {
+      if (i === 5) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[6].addEventListener("click", () => {
+    noCircleNodeList[6].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 6) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[7].addEventListener("click", () => {
+    noCircleNodeList[7].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 7) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[8].addEventListener("click", () => {
+    noCircleNodeList[8].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 8) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+
+  noCircleNodeList[9].addEventListener("click", () => {
+    noCircleNodeList[9].style.background = "#13c6ff";
+
+    for (let i = 0; i < noCircleNodeList.length; i++) {
+      if (i === 9) {
+        continue;
+      }
+      noCircleNodeList[i].style.boxShadow =
+        "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+      noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
+      noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
+    }
+  });
+};
+noCircleFun(noCircleNew);
+noCircleFun(noCircleMovie);
+noCircleFun(noCircleSerie);
 
 // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 //   background-color: #f4f4f483;
