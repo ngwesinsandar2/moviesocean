@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .oceanbg {
@@ -157,12 +160,13 @@ body {
 }
 
 .slide {
-  animation: ani 3.5s linear;
+  animation: ani 4s linear;
+  transition: animation 3.5s linear;
 }
 
 @keyframes ani {
   0% {
-    transform: scale(1.1);
+    transform: scale(0.9);
   }
   10% {
     transform: scale(1);
@@ -496,8 +500,12 @@ body {
     height: 4910px;
   }
 
+  .logoAndTitle h5 {
+    font-size: 18px;
+  }
+
   .sliderCon {
-    width: 100vw;
+    width: 100%;
   }
 
   .slideImg,
@@ -507,6 +515,7 @@ body {
   }
 
   .aboutMovie {
+    width: 100%;
     height: 80%;
   }
 
@@ -568,6 +577,15 @@ body {
 
   .plot .ageRatingAndRatingCon h5 {
     font-size: 16px;
+  }
+
+  .logoAndLetter {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .developerName {
+    font-size: 14px;
   }
 }
 
