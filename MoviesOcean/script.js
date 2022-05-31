@@ -224,7 +224,7 @@ circle[5].addEventListener("click", () => {
 });
 
 preBtn.addEventListener("click", () => {
-  console.log(count);
+  // console.log(count);
   switch (count) {
     case 0:
       count = 4;
@@ -245,11 +245,11 @@ preBtn.addEventListener("click", () => {
       count = 3;
       break;
   }
-  console.log(count);
+  // console.log(count);
 });
 
 nextBtn.addEventListener("click", () => {
-  console.log(count);
+  // console.log(count);
   switch (count) {
     case 0:
       count = 0;
@@ -270,7 +270,7 @@ nextBtn.addEventListener("click", () => {
       count = 5;
       break;
   }
-  console.log(count);
+  // console.log(count);
 });
 
 let moviesAndSeriesCon = document.querySelector(".moviesAndSeries");
@@ -300,29 +300,31 @@ let moviesAndSeriesConArray = [
 let upload2 = (moviesAndSeriesConArrayTitle) => {
   moviesAndSeriesConArrayTitle.forEach((e) => {
     let titleAndWatchings = `
-    <div class="newRelease" id="${e.id}">
-      <div class="header ms-lg-3">
-        <div class="lineAndTitle col-8">
-          <div class="line me-1"></div>
-          <h3>${e.title}</h3>
+    <div id="${e.id}">
+      <div class="newRelease">
+        <div class="header ms-lg-3">
+          <div class="lineAndTitle col-8">
+            <div class="line me-1"></div>
+            <h3>${e.title}</h3>
+          </div>
+
+          <a href=""><button class="seeAll me-4">See All</button></a>
         </div>
 
-        <a href=""><button class="seeAll me-4">See All</button></a>
-      </div>
+        <div class="newWatchings ${e.watchingsCon} ms-lg-2"></div>
 
-      <div class="newWatchings ${e.watchingsCon} ms-lg-2"></div>
-
-      <div class="numbers d-none d-sm-flex d-md-flex d-lg-flex">
-        <div class="noCircle ${e.lineClass}">1</div>
-        <div class="noCircle ${e.lineClass}">2</div>
-        <div class="noCircle ${e.lineClass}">3</div>
-        <div class="noCircle ${e.lineClass}">4</div>
-        <div class="noCircle ${e.lineClass}">5</div>
-        <div class="noCircle ${e.lineClass}">6</div>
-        <div class="noCircle ${e.lineClass}">7</div>
-        <div class="noCircle ${e.lineClass}">8</div>
-        <div class="noCircle ${e.lineClass}">9</div>
-        <div class="noCircle ${e.lineClass}">10</div>
+        <div class="numbers d-none d-sm-flex d-md-flex d-lg-flex">
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">1</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">2</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">3</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">4</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">5</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">6</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">7</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">8</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">9</a>
+          <a href="" class="text-decoration-none noCircle ${e.lineClass}">10</a>
+        </div>
       </div>
     </div>
     `;
@@ -778,7 +780,7 @@ let noCircleNew = document.querySelectorAll(".noCircleNew");
 let noCircleMovie = document.querySelectorAll(".noCircleMovie");
 let noCircleSerie = document.querySelectorAll(".noCircleSerie");
 
-const noCircleFun = (noCircleNodeList) => {
+const noCircleFun = (noCircleNodeList, watchLists) => {
   noCircleNodeList[0].addEventListener("click", () => {
     noCircleNodeList[0].style.background = "#13c6ff";
 
@@ -789,7 +791,7 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
 
-    document.querySelector("#newOne");
+    noCircleNodeList[0].href = `#${watchLists[0].id}`;
   });
 
   noCircleNodeList[1].addEventListener("click", () => {
@@ -804,6 +806,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[1].href = `#${watchLists[1].id}`;
   });
 
   noCircleNodeList[2].addEventListener("click", () => {
@@ -818,6 +822,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[2].href = `#${watchLists[2].id}`;
   });
 
   noCircleNodeList[3].addEventListener("click", () => {
@@ -832,6 +838,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[3].href = `#${watchLists[3].id}`;
   });
 
   noCircleNodeList[4].addEventListener("click", () => {
@@ -846,6 +854,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[4].href = `#${watchLists[4].id}`;
   });
 
   noCircleNodeList[5].addEventListener("click", () => {
@@ -860,6 +870,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[5].href = `#${watchLists[5].id}`;
   });
 
   noCircleNodeList[6].addEventListener("click", () => {
@@ -874,6 +886,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[6].href = `#${watchLists[6].id}`;
   });
 
   noCircleNodeList[7].addEventListener("click", () => {
@@ -888,6 +902,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[7].href = `#${watchLists[7].id}`;
   });
 
   noCircleNodeList[8].addEventListener("click", () => {
@@ -902,6 +918,8 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
+
+    noCircleNodeList[8].href = `#${watchLists[8].id}`;
   });
 
   noCircleNodeList[9].addEventListener("click", () => {
@@ -916,15 +934,15 @@ const noCircleFun = (noCircleNodeList) => {
       noCircleNodeList[i].style.backgroundColor = "#f4f4f483";
       noCircleNodeList[i].style.backdropFilter = "blur(15px) contrast(130%)";
     }
-  });
-};
-noCircleFun(noCircleNew);
-noCircleFun(noCircleMovie);
-noCircleFun(noCircleSerie);
 
-// box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-//   background-color: #f4f4f483;
-//   backdrop-filter: blur(15px) contrast(130%);
+    noCircleNodeList[9].href = `#${watchLists[9].id}`;
+  });
+  console.log(noCircleNodeList[0]);
+  console.log(watchLists[0]);
+};
+noCircleFun(noCircleNew, newWatchings);
+noCircleFun(noCircleMovie, allMovies);
+noCircleFun(noCircleSerie, allSeries);
 
 let genreLinks = document.querySelector(".genreLinks");
 let genreLink = [
@@ -1303,8 +1321,7 @@ let menuBarIcon = document.getElementById("toggle");
 let navBarPh = document.getElementById("navBarPhId");
 
 document.addEventListener("click", (e) => {
-  console.log(e);
-  if (e.target.id !== "menuBarIcon" && e.target.id !== "navBarPh") {
-    navBarPh.classList.toggle("d-none");
+  if (e.target.id !== "toggle" && e.target.id !== "navBarPh") {
+    navBarPh.classList.remove("show");
   }
 });
